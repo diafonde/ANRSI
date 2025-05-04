@@ -1,0 +1,17 @@
+{
+  "HEADER": {
+    "TITLE": "ANRSI",
+    "SUBTITLE": "Agence Nationale de la Recherche Scientifique et de l'Innovation",
+    "NAV": {
+      "HOME": "Accueil",
+      "NEWS": "Actualités",
+      "ABOUT": "À Propos",
+      "CONTACT": "Contact",
+      "MEDIA": "Médiathèque"
+    }
+  },
+  "AUTH": {
+    "LOGIN": "Connexion",
+    "SIGNUP": "S'inscrire"
+  }
+} 
