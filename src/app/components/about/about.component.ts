@@ -62,17 +62,17 @@ import { Component } from '@angular/core';
         <h2>Leadership Team</h2>
         <div class="team-grid">
           <div class="team-member">
-            <img src="/assets/images/director.jpg" alt="Director">
+            <img src="assets/images/director.jpg" alt="Director">
             <h3>Dr. Sarah Johnson</h3>
             <p>Director General</p>
           </div>
           <div class="team-member">
-            <img src="/assets/images/research-director.jpg" alt="Research Director">
+            <img src="assets/images/research-director.jpg" alt="Research Director">
             <h3>Prof. Michael Chen</h3>
             <p>Research Director</p>
           </div>
           <div class="team-member">
-            <img src="/assets/images/innovation-director.jpg" alt="Innovation Director">
+            <img src="assets/images/innovation-director.jpg" alt="Innovation Director">
             <h3>Dr. Emily Rodriguez</h3>
             <p>Innovation Director</p>
           </div>

@@ -102,6 +102,21 @@ interface NewsArticle {
       </div>
     </section>
 
+    <section class="map-section">
+      <h2>Our Location</h2>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=18.099534477533627,-15.979605442328959&z=15&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
   `,
   styles: [`
     @import 'swiper/css';
@@ -385,6 +400,33 @@ interface NewsArticle {
     .swiper-pagination-bullet-active {
       background: #1a3d1a !important;
     }
+
+    .map-section {
+      width: 100%;
+      margin: 0;
+      padding: 2rem;
+      background: #D0F0C0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .map-section h2 {
+      color: #1a3d1a;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .map-container {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(44, 94, 44, 0.1);
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+    }
   `]
 })
 export class HomeComponent implements OnInit {
@@ -393,7 +435,7 @@ export class HomeComponent implements OnInit {
       id: 1,
       title: 'Breakthrough in Quantum Computing Research',
       summary: 'Scientists achieve major milestone in quantum computing with new error correction method.',
-      imageUrl: '/assets/images/quantum-computing.jpg',
+      imageUrl: 'assets/images/quantum-computing.jpg',
       category: 'Research',
       date: new Date('2024-03-15')
     },
@@ -401,7 +443,7 @@ export class HomeComponent implements OnInit {
       id: 2,
       title: 'New Renewable Energy Initiative Launched',
       summary: 'Government announces major funding for renewable energy research and development.',
-      imageUrl: '/assets/images/renewable-energy.jpg',
+      imageUrl: 'assets/images/renewable-energy.jpg',
       category: 'Innovation',
       date: new Date('2024-03-14')
     },
@@ -409,7 +451,7 @@ export class HomeComponent implements OnInit {
       id: 3,
       title: 'International Science Conference Announced',
       summary: 'Leading scientists to gather for annual conference on climate change solutions.',
-      imageUrl: '/assets/images/conference.jpg',
+      imageUrl: 'assets/images/conference.jpg',
       category: 'Events',
       date: new Date('2024-03-13')
     }
@@ -419,31 +461,31 @@ export class HomeComponent implements OnInit {
     {
       id: 1,
       title: 'KACST President: Vision 2030 Is Leading The Kingdom Toward A Prosperous Innovation-Based Economy',
-      imageUrl: '/assets/images/news/president.jpg',
+      imageUrl: 'assets/images/news/president.jpg',
       date: new Date('2025-04-27')
     },
     {
       id: 2,
       title: 'Saudi Arabia Launches First Hackathon For Innovation In Semiconductor Technologies',
-      imageUrl: '/assets/images/news/hackathon.jpg',
+      imageUrl: 'assets/images/news/hackathon.jpg',
       date: new Date('2025-04-20')
     },
     {
       id: 3,
       title: 'Saudi Arabia Launches Quantum Valley To Operate First Quantum Computer',
-      imageUrl: '/assets/images/news/quantum.jpg',
+      imageUrl: 'assets/images/news/quantum.jpg',
       date: new Date('2025-04-15')
     },
     {
       id: 4,
       title: 'New Research Center Opens for Advanced Materials Development',
-      imageUrl: '/assets/images/news/research-center.jpg',
+      imageUrl: 'assets/images/news/research-center.jpg',
       date: new Date('2025-04-10')
     },
     {
       id: 5,
       title: 'International Collaboration Summit on Climate Technology',
-      imageUrl: '/assets/images/news/climate-tech.jpg',
+      imageUrl: 'assets/images/news/climate-tech.jpg',
       date: new Date('2025-04-05')
     }
   ];
